@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.payment-form {
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 400px;
+}
+
+.payment-form h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 24px;
+}
+.payment-form .form-text {
+   margin-bottom: 30px;
+    color: #777;
+    font-size: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #5cb85c;
+}
+
+.payment-button {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+    background-color: #4cae4c;
+}
+
+#result-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #228B22;
+    font-size: 16px;
+}
+
+/* Стили для ошибки */
+#result-message.error {
+    color: #ff4d4d;
+}
